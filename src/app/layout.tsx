@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter, Fredoka } from "next/font/google";
+import { Fredoka } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import ActiveSectionContextProvider from "../../context/active-section-context";
@@ -7,7 +7,6 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "../../context/theme-context";
 
-// const inter = Inter({ subsets: ["latin"] });
 const fredoka = Fredoka({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
