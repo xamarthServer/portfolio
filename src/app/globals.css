@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html {
+    width: 100%;
+    height: 100%;
+    --line-color:var(--line-color);
+    --line-color: #E5E7EB;
+}
+
+html.dark {
+    --line-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    width: 100%;
+}
+
+* {
+    user-select: none;
+    /* 1 */
+    pointer-events: auto;
+    /* 2 */
+    -webkit-tap-highlight-color: #0000;
+    /* 1 */
+    -webkit-user-select: none;
+    /* 1 */
+    -ms-user-select: none;
+    /* 1 */
+    -webkit-user-drag: none;
+    /* 2 */
+    -moz-user-drag: none;
+    /* 2 */
+}
