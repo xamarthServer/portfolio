@@ -43,3 +43,7 @@ body {
 .light {
     --xamarth: #d1e21a;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}

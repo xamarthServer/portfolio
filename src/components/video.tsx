@@ -1,6 +1,5 @@
 "use client";
 
-import { div } from "framer-motion/client";
 import { useRef, useState } from "react";
 import React from 'react';
 
