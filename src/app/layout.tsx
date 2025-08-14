@@ -6,6 +6,7 @@ import ActiveSectionContextProvider from "../../context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "../../context/theme-context";
+import Script from "next/script";
 
 const fredoka = Fredoka({ subsets: ["latin"] });
 
@@ -33,6 +34,8 @@ export default function RootLayout({
           <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] right-[1rem] blur-[2rem]"></div>
           <div className="bg-[#dbd7fb] absolute top-[-6rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] left-[1rem] blur-[2rem]"></div>
         </div>
+        <Script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}`}
+          crossOrigin="anonymous"></Script>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />
