@@ -20,10 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html
+      id="html"
+      className="!scroll-smooth root"
+      lang="en">
       <body
-        // cls="dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90"
-        className={`${fredoka.className} bg-[#f1f1f1] text-gray-950 relative pt-30 sm:pt-25 overflow-x-hidden`}
+        // cls="dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 bg-[#f1f1f1]"
+        id="body"
+        className={`${fredoka.className} bg-[var(--xamarth)] text-gray-950 relative pt-30 sm:pt-25 overflow-x-hidden`}
         cz-shortcut-listen="true">
         <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] right-[1rem] blur-[2rem]"></div>
         <div className="bg-[#dbd7fb] absolute top-[-6rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] left-[1rem] blur-[2rem]"></div>

@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react'
 
-type Theme = "light" | "dark";
+type Theme = "light" | "dark" | "root";
 type ThemeContextProviderProps = {
     children: React.ReactNode;
 };
@@ -15,17 +15,24 @@ const ThemeContext = createContext<ThemeContextType | null>(null);
 export default function ThemeContextProvider({
     children
 }: ThemeContextProviderProps) {
-    const [theme, setTheme] = useState<Theme>("light");
+    const [theme, setTheme] = useState<Theme>("dark");
 
     const toggleTheme = () => {
         if (theme === "light") {
             setTheme("dark");
+            document.documentElement.classList.remove("root");
+            document.documentElement.classList.remove("light");
             document.documentElement.classList.add("dark");
-            window.localStorage.setItem("theme", "dark");
-        } else {
+            // window.localStorage.setItem("theme", "dark");
+        } if (theme === "dark") {
             setTheme("light");
+            document.documentElement.classList.remove("root");
             document.documentElement.classList.remove("dark");
-            window.localStorage.setItem("theme", "light");
+            document.documentElement.classList.add("light");
+            // window.localStorage.setItem("theme", "light");
+        } if (theme === "root") {
+            document.documentElement.classList.remove("root");
+            document.documentElement.classList.add("light");
         }
     };
 
