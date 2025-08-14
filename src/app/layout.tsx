@@ -29,8 +29,10 @@ export default function RootLayout({
         id="body"
         className={`${fredoka.className} bg-[var(--xamarth)] text-gray-950 relative pt-30 sm:pt-25 overflow-x-hidden transition-all`}
         cz-shortcut-listen="true">
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] right-[1rem] blur-[2rem]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-6rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] left-[1rem] blur-[2rem]"></div>
+        <div className="">
+          <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] right-[1rem] blur-[2rem]"></div>
+          <div className="bg-[#dbd7fb] absolute top-[-6rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] left-[1rem] blur-[2rem]"></div>
+        </div>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />
