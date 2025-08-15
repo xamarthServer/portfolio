@@ -2,10 +2,8 @@ import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "../../context/active-section-context";
 import { useEffect } from "react";
 import type { SectionName } from "./types";
-
-// type useSectionInViewProps = {
-//     sectionName: SectionName;
-// };
+import type { SectionLink } from "./types";
+const sectionIds = ["home", "about", "projects", "skills", "experience", "contact"];
 
 export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
     const { ref, inView } = useInView({
@@ -22,4 +20,27 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
     }, [inView, setActiveSection, timeOfLastClick, sectionName]);
 
     return { ref }
+}
+
+export function UseSectionHash(threshold = 0.75) {
+    useEffect(() => {
+        const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    history.replaceState(null, "", `#${entry.target.id}`);
+                }
+            });
+        };
+
+        const observer = new window.IntersectionObserver(handleIntersect, {
+            threshold,
+        });
+
+        sectionIds.forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+
+        return () => observer.disconnect();
+    }, []);
 }
