@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "../../context/theme-context";
 import Script from "next/script";
+import { Toaster } from "react-hot-toast";
 
 const fredoka = Fredoka({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <Toaster position="bottom-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
