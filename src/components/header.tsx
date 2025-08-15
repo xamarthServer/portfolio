@@ -42,11 +42,11 @@ export default function Header() {
                                                 layoutId="activeSection"
                                                 initial={{ y: 80, opacity: 0 }}
                                                 animate={{ y: 0, opacity: 1 }}
-                                                // transition={{
-                                                //     type: "spring",
-                                                //     stiffness: 380,
-                                                //     damping: 30,
-                                                // }}
+                                                transition={{
+                                                    //     type: "spring",
+                                                    //     stiffness: 380,
+                                                    //     damping: 30,
+                                                }}
                                                 className="bg-gray-100 border rounded-full absolute inset-0 -z-10 my-0.5">
                                             </motion.span>
                                         )

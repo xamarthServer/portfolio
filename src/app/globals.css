@@ -32,16 +32,25 @@ body {
     /* 2 */
 }
 
-:root {
-    --xamarth: #f1f1f1;
-}
-
+:root,
 .dark {
-    --xamarth: #101828;
+    --fullBg: #101828;
+    --themeIcon: #f1f1f1;
+    --introBlur1: #946263;
+    --introBlur2: #676394;
+    --moonSun: #f1f1f1;
+    /* --fullBg: #101619; */
+    --temp: #f1f1f1;
 }
 
 .light {
-    --xamarth: #F1F1F1;
+    --fullBg: #F1F1F1;
+    /* --fullBg: #101619; */
+    --themeIcon: #000000;
+    --introBlur1: #fdb4c7;
+    --introBlur2: #bbd1fe;
+    --moonSun: #010101;
+    --temp: #f1f1f1;
 }
 
 ::-webkit-scrollbar {
