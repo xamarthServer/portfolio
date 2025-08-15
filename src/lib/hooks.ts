@@ -2,7 +2,6 @@ import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "../../context/active-section-context";
 import { useEffect } from "react";
 import type { SectionName } from "./types";
-import type { SectionLink } from "./types";
 const sectionIds = ["home", "about", "projects", "skills", "experience", "contact"];
 
 export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
