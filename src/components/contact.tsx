@@ -22,7 +22,7 @@ export default function Contact() {
             <div className="space h-25"></div>
             <SectionHeading>Contact Me</SectionHeading>
             <p className="text-gray-700 -mt-6">
-                Please contact me directlt at{" "}
+                Please contact me directly at{" "}
                 <a
                     className="underline"
                     href="mailto:creationteamoreo@gmail.com">
