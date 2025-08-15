@@ -22,7 +22,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
     return { ref }
 }
 
-export function UseSectionHash(threshold = 0.75) {
+export function UseSectionHash(threshold:number) {
     useEffect(() => {
         const handleIntersect = (entries: IntersectionObserverEntry[]) => {
             entries.forEach((entry) => {
