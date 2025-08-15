@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import React from 'react';
+import { FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 
 interface VideoProps {
     src: string;
@@ -37,7 +38,7 @@ export default function Video({ src, poster }: VideoProps) {
             </div>
             <div className="fixed top-3 left-3 z-[99999]">
                 <button onClick={handleMuteToggle}>
-                    {isMuted ? "Unmute" : "Mute"}
+                    {isMuted ? (<FaVolumeMute />) : (<FaVolumeUp />)}
                 </button>
             </div>
         </div>
