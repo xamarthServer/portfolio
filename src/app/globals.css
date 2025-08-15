@@ -37,11 +37,11 @@ body {
 }
 
 .dark {
-    --xamarth: #2d0edf;
+    --xamarth: #101828;
 }
 
 .light {
-    --xamarth: #d1e21a;
+    --xamarth: #F1F1F1;
 }
 
 ::-webkit-scrollbar {

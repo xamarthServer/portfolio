@@ -11,7 +11,7 @@ export default function ThemeSwitch() {
     return (
         <button
             onClick={toggleTheme}
-            className="fixed right-7 top-7 w-[3rem] h-[3rem] bg-opacity-0 backdrop-blur-[0rem] shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.5] active:scale-105 transition">
+            className="fixed right-7 top-7 w-[3rem] h-[3rem] bg-opacity-0 backdrop-blur-[0rem] rounded-full flex items-center justify-center hover:scale-[1.5] active:scale-105 transition">
             {
                 theme === "dark" ? (moon) : (sun)
             }
@@ -19,4 +19,5 @@ export default function ThemeSwitch() {
     )
 }
 
-//  border border-white border-opacity-40 bg-[var(--xamarth)]
+// border border-white border-opacity-40 bg-[var(--xamarth)]
+// shadow-2xl
