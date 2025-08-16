@@ -24,14 +24,14 @@ export default function RootLayout({
   return (
     <html
       id="html"
-      className="!scroll-smooth root"
+      className="!scroll-smooth dark"
       lang="en">
       <body
         // dark:text-gray-50 dark:text-opacity-90 bg-[#f1f1f1]
         // bg-[#fbe2e3]
         // bg-[#dbd7fb]
         id="body"
-        className={`${fredoka.className} bg-[var(--fullBg)] text-gray-950 relative pt-30 sm:pt-25 overflow-x-hidden transition-all`}
+        className={`${fredoka.className} bg-[var(--fullBg)] text-[var(--introPara)] relative pt-30 sm:pt-25 overflow-x-hidden transition-all`}
         cz-shortcut-listen="true">
         <div className="">
           <div className="bg-[var(--introBlur1)] absolute top-[-18rem] -z-10 h-[50rem] w-[50rem] rounded-full sm:w-[50rem] right-[15rem] blur-[10rem]"></div>

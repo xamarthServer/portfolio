@@ -32,27 +32,82 @@ body {
     /* 2 */
 }
 
-:root,
+::-webkit-scrollbar {
+    display: none;
+}
+
+.dark .headr {
+    background-color: #030712;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.light .headr {
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* :root, */
+
 .dark {
+    /* layout */
     --fullBg: #101828;
     --themeIcon: #f1f1f1;
     --introBlur1: #946263;
     --introBlur2: #676394;
     --moonSun: #f1f1f1;
-    /* --fullBg: #101619; */
+    --introPara: #f9fafbee;
+    /* header */
+    --ulText: #6A7282;
+    --liBg: #00000000;
+    --liHovrBg: #f1f1f10f;
+    --liText: #D1D5DCaa;
+    --liHovrText: #E5E7EB;
+    --actvTxt: #030712;
+    --actvBubble: #1E2939;
+    /* test */
     --temp: #f1f1f1;
 }
 
 .light {
+    /* layout */
     --fullBg: #F1F1F1;
-    /* --fullBg: #101619; */
     --themeIcon: #000000;
     --introBlur1: #fdb4c7;
     --introBlur2: #bbd1fe;
     --moonSun: #010101;
+    --introPara: #030712;
+    /* header */
+    --ulText: #6A7282;
+    --liBg: #00000000;
+    --liHovrBg: #00000010;
+    --liText: #6A7282;
+    --liHovrText: #030712;
+    /* --actvTxt: #d2c211; */
+    --actvBubble: #f3f4f6;
+    /* test */
     --temp: #f1f1f1;
 }
 
-::-webkit-scrollbar {
-    display: none;
+.light .actvBubble {
+    color: #030712;
 }
+
+.dark .actvTxt {
+    color: #E5E7EB;
+}
+
+.light .actvTxt {
+    color: #030712;
+}
+
+/* xamarth */
+
+/* ok
+
+gray-950 = #030712
+gray-800 = #1E2939
+gray-300 = #D1D5DC
+gray-200 = #E5E7EB
+gray-100 = #F3F4F6
+
+ok */
