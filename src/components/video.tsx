@@ -40,7 +40,7 @@ export default function Video({ src, poster }: VideoProps) {
             </div>
             <button
                 onClick={handleMuteToggle}
-                className="fixed justify-center items-center flex top-10 left-5 w-[3rem] h-[1rem] z-[99999] cursor-pointer hover:scale-[1.5] active:scale-0 transition-transform active:rotate-90">
+                className="fixed justify-center items-center flex top-10 left-5 w-[3rem] h-[1rem] z-[99999] cursor-pointer hover:scale-[1.5] active:scale-[0.9] transition-transform">
                 {
                     isMuted ? (pause) : (play)
                 }
