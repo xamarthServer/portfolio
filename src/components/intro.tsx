@@ -89,9 +89,9 @@ export default function Intro() {
                     href="/cv.pdf"
                     target="_blank"
                     download={false}
-                    className="cvLink group flex bg-white px-7 py-3 items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer shadow-lg">
+                    className="cvLink group flex bg-white px-7 py-3 items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition-transform cursor-pointer shadow-lg">
                     Download Resume{" "}
-                    <HiDownload className="group-hover:translate-y-0.5 group-hover:scale-125 transition" />
+                    <HiDownload className="group-hover:translate-y-0.5 group-hover:scale-125 transition-transform" />
                 </a>
                 <a
                     href="https://www.linkedin.com"
