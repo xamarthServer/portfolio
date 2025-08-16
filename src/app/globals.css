@@ -65,6 +65,8 @@ body {
     --actvTxt: #030712;
     --actvBubble: #1E2939;
     --downloadIcon: #f1f1f1;
+    --inIcon: #D8D8DA;
+    --gitIcon: #1E2939;
     /* test */
     --temp: #f1f1f1;
 }
@@ -86,8 +88,10 @@ body {
     /* --actvTxt: #d2c211; */
     --actvBubble: #f3f4f6;
     --downloadIcon: #030712;
+    --inIcon: #111111;
+    --gitIcon: #f1f1f1;
     /* test */
-    --temp: #f1f1f1;
+    --temp: #544141;
 }
 
 .light .actvBubble {
