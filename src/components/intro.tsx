@@ -4,11 +4,14 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from "framer-motion";
 import Link from 'next/link';
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-import { HiDownload } from 'react-icons/hi';
+import { BsLinkedin } from 'react-icons/bs';
 import { FaSquareGithub } from 'react-icons/fa6';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '../../context/active-section-context';
+
+const rightArrow = (<svg className="rightArrow group-hover:translate-x-1 group-hover:scale-125 transition" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12L20 12M20 12L14 18M20 12L14 6" stroke="#ffffff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>);
+
+const downloadIcon = (<svg className="downloadIcon group-hover:translate-y-0.5 group-hover:scale-125 transition-transform" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 15V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V15M17 10L12 15M12 15L7 10M12 15V3" stroke="var(--downloadIcon)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>);
 
 export default function Intro() {
     const { ref } = useSectionInView("Home");
@@ -83,15 +86,16 @@ export default function Intro() {
                         setTimeOfLastClick(Date.now());
                     }}
                     className="contSc group flex bg-gray-900 text-white px-7 py-3 items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer shadow-lg">
-                    Contact Me Here{" "}<BsArrowRight className="group-hover:translate-x-1 group-hover:scale-125 transition" />
+                    Contact Me Here{" "}{(rightArrow)}
+                    {/* <BsArrowRight className="group-hover:translate-x-1 group-hover:scale-125 transition" /> */}
                 </Link>
                 <a
                     href="/cv.pdf"
                     target="_blank"
                     download={false}
                     className="cvLink group flex bg-white px-7 py-3 items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition-transform cursor-pointer shadow-lg">
-                    Download Resume{" "}
-                    <HiDownload className="group-hover:translate-y-0.5 group-hover:scale-125 transition-transform" />
+                    Download Resume{" "}{(downloadIcon)}
+                    {/* <HiDownload className="group-hover:translate-y-0.5 group-hover:scale-125 transition-transform" /> */}
                 </a>
                 <a
                     href="https://www.linkedin.com"

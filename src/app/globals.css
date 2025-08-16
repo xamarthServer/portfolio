@@ -64,6 +64,7 @@ body {
     --liHovrText: #E5E7EB;
     --actvTxt: #030712;
     --actvBubble: #1E2939;
+    --downloadIcon: #f1f1f1;
     /* test */
     --temp: #f1f1f1;
 }
@@ -84,6 +85,7 @@ body {
     --liHovrText: #030712;
     /* --actvTxt: #d2c211; */
     --actvBubble: #f3f4f6;
+    --downloadIcon: #030712;
     /* test */
     --temp: #f1f1f1;
 }
