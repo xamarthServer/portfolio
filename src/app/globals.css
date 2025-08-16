@@ -100,6 +100,28 @@ body {
     color: #030712;
 }
 
+.dark .cvLink {
+    background-color: #f1f1f11a;
+}
+
+.dark .ldL {
+    background-color: #f1f1f11a;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.light .ldL {
+    background-color: #f1f1f1;
+}
+
+.dark .ghL {
+    background-color: #f1f1f11a;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.light .ghL {
+    background-color: #f1f1f1;
+}
+
 /* xamarth */
 
 /* ok

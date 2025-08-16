@@ -82,27 +82,27 @@ export default function Intro() {
                         setActiveSection("Contact");
                         setTimeOfLastClick(Date.now());
                     }}
-                    className="group flex bg-gray-900 text-white px-7 py-3 items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer shadow-lg">
+                    className="contSc group flex bg-gray-900 text-white px-7 py-3 items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer shadow-lg">
                     Contact Me Here{" "}<BsArrowRight className="group-hover:translate-x-1 group-hover:scale-125 transition" />
                 </Link>
                 <a
                     href="/cv.pdf"
                     target="_blank"
                     download={false}
-                    className="group flex bg-white px-7 py-3 items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer shadow-lg">
+                    className="cvLink group flex bg-white px-7 py-3 items-center gap-2 rounded-full outline-none hover:scale-110 active:scale-105 transition cursor-pointer shadow-lg">
                     Download Resume{" "}
                     <HiDownload className="group-hover:translate-y-0.5 group-hover:scale-125 transition" />
                 </a>
                 <a
                     href="https://www.linkedin.com"
                     target="_blank"
-                    className="flex bg-white text-gray-700 p-4 items-center gap-2 text-[1.35rem] rounded-full outline-none hover:text-gray-950 hover:scale-120 active:scale-105 transition cursor-pointer shadow-lg">
+                    className="ldL flex bg-white text-gray-700 p-4 items-center gap-2 text-[1.35rem] rounded-full outline-none hover:text-gray-950 hover:scale-120 active:scale-105 transition cursor-pointer shadow-lg">
                     <BsLinkedin />
                 </a>
                 <a
                     href="https://github.com/xamarth"
                     target="_blank"
-                    className="flex bg-white text-gray-700 p-4 items-center gap-2 text-[1.35rem] rounded-full outline-none hover:text-gray-950 hover:scale-120 active:scale-105 transition cursor-pointer shadow-lg">
+                    className="ghL flex bg-white text-gray-700 p-4 items-center gap-2 text-[1.35rem] rounded-full outline-none hover:text-gray-950 hover:scale-120 active:scale-105 transition cursor-pointer shadow-lg">
                     <FaSquareGithub />
                 </a>
             </motion.div>
